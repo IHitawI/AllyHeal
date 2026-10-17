@@ -1,0 +1,30 @@
+AllyHeal 1.0.0 - Dark Souls Remastered
+======================================
+
+Requirements
+  - Dark Souls Remastered (Steam)
+  - Mod Engine 2: https://github.com/soulsmods/ModEngine2/releases
+
+Install
+  1. Copy the "AllyHeal" folder into your Mod Engine 2 folder
+     (the folder that contains config_darksoulsremastered.toml).
+  2. Open config_darksoulsremastered.toml and add this line to the "mods" list:
+         {enabled = true, name = "AllyHeal", path = "AllyHeal"},
+  3. Start the game with launchmod_darksoulsremastered.bat
+     (or the Seamless Co-op launcher, if you use it).
+
+Co-op
+  Every player in the session needs AllyHeal. Hits on a player are resolved
+  on that player's game, so without the mod an ally will not receive the heal.
+  Allies only: opponents in PvP (including Seamless Co-op PvP mode) are never healed or buffed.
+
+Compatibility
+  AllyHeal replaces GameParam.parambnd.dcx. Any other mod that ships its own
+  GameParam (for example Prepare To Die Again or BetterRolling) conflicts:
+  Mod Engine 2 loads only the one listed first. Such mods have to be merged.
+
+Online
+  Do not use mods on the official online servers. Play offline or with Seamless Co-op.
+
+Uninstall
+  Remove the AllyHeal line from config_darksoulsremastered.toml (and the folder).

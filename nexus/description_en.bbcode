@@ -1,0 +1,55 @@
+[size=5][b]AllyHeal[/b][/size]
+[i]Group heals and support spells for Dark Souls Remastered co-op.[/i]
+
+Healing miracles and support spells now also affect allies standing next to you, the way they do in Dark Souls II, III and Elden Ring. Enemies and PvP opponents are never affected.
+
+[size=4][b]Healing[/b][/size]
+Allies within 3 m receive [b]75%[/b] of what you heal yourself:
+[list]
+[*][b]Heal[/b] - you 300, allies 225
+[*][b]Great Heal[/b] - you 800, allies 600
+[*][b]Great Heal Excerpt[/b] - you 800, allies 600
+[*][b]Replenishment[/b] - you 10 HP/s, allies 8 HP/s (60 s)
+[/list]
+Hidden spell levels scale the same way. Soothing Sunlight and Bountiful Sunlight are untouched and stay the strongest group heals.
+
+[size=4][b]Support spells[/b][/size]
+Full effect on allies within 3 m:
+[list]
+[*]Magic Barrier, Great Magic Barrier
+[*]Escape Death, Flash Sweat
+[*]Remedy (cures poison, toxic and bleed on allies too), Resist Curse
+[*]Hidden Body, Hush, Fall Control, Cast Light, Repair
+[/list]
+Cast animations, costs and requirements are unchanged.
+
+[size=4][b]Requirements[/b][/size]
+[list]
+[*][url=https://github.com/soulsmods/ModEngine2/releases]Mod Engine 2[/url]
+[*]Every player in the session needs the mod (hits on a player are resolved on that player's game).
+[*]Works with Seamless Co-op.
+[/list]
+
+[size=4][b]Installation[/b][/size]
+[list=1]
+[*]Copy the [b]AllyHeal[/b] folder into your Mod Engine 2 folder (where config_darksoulsremastered.toml is).
+[*]Add this line to the [b]mods[/b] list in config_darksoulsremastered.toml:
+[code]{enabled = true, name = "AllyHeal", path = "AllyHeal"},[/code]
+[*]Launch with launchmod_darksoulsremastered.bat or the Seamless Co-op launcher.
+[/list]
+Uninstall: remove the line from the config.
+
+[size=4][b]Compatibility[/b][/size]
+AllyHeal replaces [b]GameParam.parambnd.dcx[/b]. It conflicts with any other mod that ships its own GameParam (for example Prepare To Die Again, BetterRolling) - Mod Engine 2 loads only the one listed first. The source is open, so it can be merged into other param mods.
+
+[b]Do not use mods on the official online servers.[/b] Play offline or with Seamless Co-op.
+
+[size=4][b]Known issues[/b][/size]
+[list]
+[*]Cast Light is experimental.
+[*]An ally may not see the heal visual on themselves; the HP is still restored.
+[*]Replenishment cast on an ally replaces a stronger Bountiful Sunlight regen on them.
+[/list]
+
+[size=4][b]Source[/b][/size]
+Open source (MIT), with a build script that generates the mod from your own copy of the game: [url=GITHUB_LINK]GitHub[/url]

@@ -1,0 +1,8 @@
+# build output (contains derived game data, published on Nexus / GitHub Releases instead)
+dist/
+__pycache__/
+*.pyc
+# never commit game files
+*.dcx
+*.bdt
+*.bhd
