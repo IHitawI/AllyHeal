@@ -1,4 +1,9 @@
+<p align="center"><img src="docs/images/banner.png" alt="AllyHeal — group heals and support spells for Dark Souls Remastered co-op"></p>
+
 # AllyHeal — Dark Souls Remastered
+
+[![Release](https://img.shields.io/github/v/release/IHitawI/AllyHeal)](https://github.com/IHitawI/AllyHeal/releases/latest)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 Healing miracles and support spells also affect allies standing next to you, the way they do in
 Dark Souls II, III and Elden Ring. Enemies and PvP opponents are never affected.
@@ -24,6 +29,10 @@ Magic Barrier, Great Magic Barrier, Escape Death, Flash Sweat, Remedy, Resist Cu
 Hidden Body, Hush, Fall Control, Cast Light, Repair.
 
 Cast animations, costs and requirements are unchanged.
+
+## Download
+
+Get **AllyHeal-1.0.0.zip** from the [latest release](https://github.com/IHitawI/AllyHeal/releases/latest).
 
 ## Install
 
@@ -52,6 +61,7 @@ The game folder must be unmodified (the build refuses an already-patched GamePar
 | `src/allyheal.py` | the mod: which spells, numbers, IDs |
 | `src/soulsformats.py` | readers/writers for DCX, BND3, PARAMDEF, PARAM, FMG (written from scratch, byte-exact round-trip) |
 | `build.py` | loads the game files, applies the mod, writes the mod folder and zip |
+| `tools/make_banner.py` | builds the README banner from an in-game screenshot (HUD and names cropped) |
 
 ### How it works
 
@@ -98,6 +108,8 @@ this repository contains none of it.
 **Поддержка:** полный эффект на союзников в радиусе 3 м:
 Волшебный барьер, Большой волшебный барьер, Уход от смерти, Сырая плоть, Исцеление,
 Сопротивление проклятию, Незаметность, Бесшумность, Осторожное падение, Заклинание Света, Починка.
+
+**Скачать:** архив **AllyHeal-1.0.0.zip** в [последнем релизе](https://github.com/IHitawI/AllyHeal/releases/latest).
 
 **Установка:** [docs/INSTALL_RU.txt](docs/INSTALL_RU.txt). Мод нужен всем игрокам в коопе.
 Конфликтует с модами, у которых есть свой `GameParam.parambnd.dcx`.

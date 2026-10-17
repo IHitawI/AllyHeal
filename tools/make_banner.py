@@ -1,4 +1,7 @@
-"""Nexus header + main image for AllyHeal from an in-game screenshot (HUD and player names cropped out)."""
+"""Banner (1920x480) and preview image (1280x720) for AllyHeal from a 1920x1080 in-game screenshot.
+
+HUD and player names are cropped out.  Usage: python tools/make_banner.py <screenshot.jpg> <out dir>
+"""
 import sys, random
 from PIL import Image, ImageDraw, ImageFilter, ImageFont, ImageEnhance
 
