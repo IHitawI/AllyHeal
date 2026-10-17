@@ -9,8 +9,8 @@
 > Heal, Great Heal, Replenishment and 11 support spells now also affect allies within 3 m, like in DS2/DS3/Elden Ring. Allies get 75% of your heal; enemies and PvP opponents are never affected. For co-op with Mod Engine 2 / Seamless Co-op.
 
 **Описание:** `description_en.bbcode` (основное), `description_ru.bbcode` можно добавить
-ниже под спойлер `[spoiler]...[/spoiler]` или отдельной страницей. Перед публикацией замените
-`GITHUB_LINK` на ссылку на репозиторий.
+ниже под спойлер `[spoiler]...[/spoiler]` или отдельной страницей.
+Репозиторий: https://github.com/IHitawI/AllyHeal
 
 **Теги:** Gameplay, Co-op, Multiplayer, Magic, Miracles, Healing, Balance
 
